@@ -1,58 +1,57 @@
-'use client';
-
+import React from 'react';
 import { Mail, Globe, FileText, BookOpen, Award, Settings, Layout, Users } from 'lucide-react';
 
-const experiences = [
-  {
-    title: "Associate Manager - Design",
-    company: "Tredence Inc., Bengaluru",
-    period: "Jan 24 — Current",
-    responsibilities: [
-      "Directed the design vision for digital products, aligning user experience strategies with business objectives",
-      "Facilitated discovery workshops to shape skill and career frameworks for HR operations",
-      "Developed a skill management dashboard with intuitive data visualization for RMG, L&D, and Delivery Heads",
-      "Designed end-to-end modules for the Career Compass product, including recommendation systems",
-      "Created engaging empty states and UX copy, ensuring clarity and user engagement"
-    ]
-  },
-  {
-    title: "Design Lead",
-    company: "Brillio",
-    period: "Mar 2023 – Sep 2023",
-    responsibilities: [
-      "Led design projects with a focus on delivering exceptional B2B solutions in a hybrid work environment",
-      "Collaborated with stakeholders to translate business needs into actionable design objectives"
-    ]
-  },
-  {
-    title: "Product Designer",
-    company: "Yubi",
-    period: "Dec 2021 – Sep 2022",
-    responsibilities: [
-      "Enhanced the usability of Yubi's Investor Marketplace through data-driven design decisions",
-      "Conducted A/B testing and applied insights to improve product features and user workflows"
-    ]
-  },
-  {
-    title: "UX Designer",
-    company: "Lollypop Design Studio",
-    period: "Apr 2021 – Dec 2021",
-    responsibilities: [
-      "Delivered user-centric designs for B2B platforms, focusing on functionality and engagement"
-    ]
-  }
-];
+const ResumeLanding = () => {
+  const experiences = [
+    {
+      title: "Associate Manager - Design",
+      company: "Tredence Inc., Bengaluru",
+      period: "Jan 24 — Current",
+      responsibilities: [
+        "Directed the design vision for digital products, aligning user experience strategies with business objectives",
+        "Facilitated discovery workshops to shape skill and career frameworks for HR operations",
+        "Developed a skill management dashboard with intuitive data visualization for RMG, L&D, and Delivery Heads",
+        "Designed end-to-end modules for the Career Compass product, including recommendation systems",
+        "Created engaging empty states and UX copy, ensuring clarity and user engagement"
+      ]
+    },
+    {
+      title: "Design Lead",
+      company: "Brillio",
+      period: "Mar 2023 – Sep 2023",
+      responsibilities: [
+        "Led design projects with a focus on delivering exceptional B2B solutions in a hybrid work environment",
+        "Collaborated with stakeholders to translate business needs into actionable design objectives"
+      ]
+    },
+    {
+      title: "Product Designer",
+      company: "Yubi",
+      period: "Dec 2021 – Sep 2022",
+      responsibilities: [
+        "Enhanced the usability of Yubi's Investor Marketplace through data-driven design decisions",
+        "Conducted A/B testing and applied insights to improve product features and user workflows"
+      ]
+    },
+    {
+      title: "UX Designer",
+      company: "Lollypop Design Studio",
+      period: "Apr 2021 – Dec 2021",
+      responsibilities: [
+        "Delivered user-centric designs for B2B platforms, focusing on functionality and engagement"
+      ]
+    }
+  ];
 
-const certifications = [
-  "AI for Product Management, Pendo.io",
-  "Developing Innovative Ideas for Product Leaders, University of Maryland",
-  "Introduction to Marketing, Wharton Online",
-  "Enterprise Design Thinking Practitioner, IBM",
-  "Conducting Usability Testing, Interaction Design Foundation",
-  "Product-led Certification, Pendo.io"
-];
+  const certifications = [
+    "AI for Product Management, Pendo.io",
+    "Developing Innovative Ideas for Product Leaders, University of Maryland",
+    "Introduction to Marketing, Wharton Online",
+    "Enterprise Design Thinking Practitioner, IBM",
+    "Conducting Usability Testing, Interaction Design Foundation",
+    "Product-led Certification, Pendo.io"
+  ];
 
-export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-gray-100">
       {/* Header */}
@@ -86,10 +85,9 @@ export default function Home() {
               Strategic Design Leader
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Strategic and visionary Design Leader with over 10 years of experience driving innovative, 
-              user-centric design solutions across UX, UI, and product design. Expertise in building and 
-              leading design teams, crafting seamless user experiences, and aligning design strategies 
-              with business goals.
+              Results-driven Design Operations Leader with over 10 years of experience optimizing UX processes,
+              managing cross-functional projects, and driving operational excellence in design teams. Proven track record in
+              program management, process optimization, and fostering collaboration between UX, Product Management, and Engineering teams.
             </p>
             <div className="flex justify-center space-x-4">
               <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center">
@@ -111,7 +109,7 @@ export default function Home() {
           <h3 className="text-3xl font-bold mb-12 text-center text-blue-400">Professional Experience</h3>
           <div className="max-w-4xl mx-auto space-y-12">
             {experiences.map((exp, index) => (
-              <div key={index} className="bg-gray-900/30 backdrop-blur-sm p-6 rounded-lg border border-purple-900/20 hover:border-purple-800/30 transition-all">
+              <div key={index} className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-blue-500 transition-all">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h4 className="text-xl font-semibold text-white">{exp.title}</h4>
@@ -150,19 +148,19 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="bg-gray-950/50 backdrop-blur-sm p-6 rounded-lg border border-purple-900/20">
+            <div className="bg-gray-900 p-6 rounded-lg border border-gray-700">
               <h4 className="text-xl font-semibold mb-4 flex items-center text-white">
                 <Users className="w-5 h-5 mr-2 text-blue-400" />
                 Core Competencies
               </h4>
               <div className="space-y-2 text-gray-300">
-                <p>Product Design • UX Research</p>
-                <p>Interaction Design • Wireframing</p>
-                <p>Design Leadership • Brand Strategy</p>
+                <p>Design Operations • Program Management</p>
+                <p>Process Optimization • Resource Planning</p>
+                <p>Cross-functional Leadership • Change Management</p>
               </div>
             </div>
 
-            <div className="bg-gray-950/50 backdrop-blur-sm p-6 rounded-lg border border-purple-900/20">
+            <div className="bg-gray-900 p-6 rounded-lg border border-gray-700">
               <h4 className="text-xl font-semibold mb-4 flex items-center text-white">
                 <Layout className="w-5 h-5 mr-2 text-blue-400" />
                 Development
@@ -184,7 +182,7 @@ export default function Home() {
             <h3 className="text-3xl font-bold mb-12 text-center text-blue-400">Education & Certifications</h3>
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gray-900/30 backdrop-blur-sm p-6 rounded-lg border border-purple-900/20">
+              <div className="bg-gray-900/30 backdrop-blur-sm p-6 rounded-lg border border-purple-900/20 hover:border-purple-800/30 transition-all">
                 <h4 className="text-xl font-semibold mb-4 flex items-center text-white">
                   <BookOpen className="w-5 h-5 mr-2 text-blue-400" />
                   Education
@@ -203,7 +201,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-gray-900/30 backdrop-blur-sm p-6 rounded-lg border border-purple-900/20">
+              <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
                 <h4 className="text-xl font-semibold mb-4 flex items-center text-white">
                   <Award className="w-5 h-5 mr-2 text-blue-400" />
                   Certifications
@@ -241,4 +239,6 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+};
+
+export default ResumeLanding;
